@@ -22,7 +22,25 @@ export default class ReactNativeLocalization extends Component {
     console.log(holdTight);
     console.log('Devices locale');
     console.log(deviceLocale);
+
+    this.test();
   }
+
+  test()
+  {
+    // Enable fallbacks if you want `en-US` and `en-GB` to fallback to `en`
+    I18n.fallbacks = true
+    I18n.translations = {
+      en: {
+        greeting: 'Hi!'
+      },
+      fr: {
+        greeting: 'Bonjour!'
+      }
+      //const holdTight = I18n.t('greeting');
+      //console.log(holdTight);
+  }
+ }
 
   render() {
     return (
