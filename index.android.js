@@ -12,12 +12,23 @@ import {
   View
 } from 'react-native';
 
+import I18n from 'react-native-i18n';
+
 export default class ReactNativeLocalization extends Component {
+
+  componentDidMount() {
+    const deviceLocale = I18n.locale;
+    const holdTight = I18n.t('holdTight');
+    console.log(holdTight);
+    console.log('Devices locale');
+    console.log(deviceLocale);
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native! {I18n.t('signing')}
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
