@@ -1,10 +1,6 @@
 export default {
-  welcome: 'Welcome',
-  createAccount: 'CREATE ACCOUNT',
-  login: 'LOGIN',
 
   //Main.js String
-
   holdTight: 'Hold Tight!',
   signing: 'Signing you in. ⏳',
   recentOrders: 'Getting your recent orders. 🍔',
